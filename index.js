@@ -97,7 +97,8 @@ expandir1 = () => {
     seccio1.style.transform = "scale(1)";
     seccio2.style.transform = "scale(1)";
 
-    document.querySelector(".expandir").src = "./images/expandir.svg";
+    document.querySelector(".expandir").src =
+      "./materials/botoPrioritzarPantalla.png";
   }
 };
 expandir2 = () => {
@@ -114,6 +115,7 @@ expandir2 = () => {
     seccio2.style.transform = "scale(1)";
     seccio1.style.transform = "scale(1)";
 
-    document.querySelector(".expandir").src = "./images/expandir.svg";
+    document.querySelector(".expandir").src =
+      "./materials/botoPrioritzarPantalla.png";
   }
 };
