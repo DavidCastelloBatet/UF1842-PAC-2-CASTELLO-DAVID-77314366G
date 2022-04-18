@@ -19,7 +19,7 @@
     <div class="reproductors">
       <section class="reproductor1">
         <!-- start video display -->
-        <div class="video">
+        <div id="video1" class="video">
           <video
             src="./materials/The_Adirondack_Forest_Preserve.webm.360p.webm"
             poster="./materials/The_Adirondack_Forest_Preserve.webm.jpg"
@@ -81,7 +81,7 @@
               alt="velocidad"
               title="Modificar velocitat"
             />
-            <div class="estado"></div>
+            <div class="estado estado1"></div>
           </div>
           <!-- start boton expandir / contraer -->
           <div class="botoneraDerecha">
@@ -98,7 +98,7 @@
       </section>
       <section class="reproductor2">
         <!-- start video display -->
-        <div class="video">
+        <div id="video2" class="video">
           <video
             src="./materials/The_Adirondack_Forest_Preserve.webm.360p.webm"
             poster="./materials/The_Adirondack_Forest_Preserve.webm.jpg"
@@ -160,7 +160,7 @@
               alt="velocidad"
               title="Modificar velocitat"
             />
-            <div class="estado"></div>
+            <div class="estado estado2"></div>
           </div>
           <!-- start boton expandir / contraer -->
           <div class="botoneraDerecha">
@@ -184,6 +184,7 @@
             src="./images/play.svg"
             alt="play"
             title="Play / Pausa"
+            onclick="reproductor.playAll()"
           />
           <img
             class="siguiente"
@@ -220,7 +221,6 @@
             alt="velocidad"
             title="Modificar velocitat"
           />
-          <div class="estado"></div>
         </div>
         <!-- start boton expandir / contraer -->
         <div class="botoneraDerecha">
