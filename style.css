@@ -2,6 +2,7 @@ body {
   background-color: #c0bdbb;
   font-family: "Montserrat", sans-serif;
   margin: auto;
+  box-sizing: border-box;
 }
 .reproductors {
   display: flex;

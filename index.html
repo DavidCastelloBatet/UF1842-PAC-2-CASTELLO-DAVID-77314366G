@@ -17,13 +17,13 @@
 
   <body>
     <div class="reproductors">
-      <section class="reproductor1">
+      <section id="reproductor1">
         <!-- start video display -->
         <div id="video1" class="video">
           <video
             src="./materials/The_Adirondack_Forest_Preserve.webm.360p.webm"
             poster="./materials/The_Adirondack_Forest_Preserve.webm.jpg"
-            class="video--1"
+            class="video--1 tempsVideo"
           ></video>
         </div>
         <!-- start video display -->
@@ -81,7 +81,7 @@
               alt="velocidad"
               title="Modificar velocitat"
             />
-            <div class="estado estado1"></div>
+            <div id="estado1" class="estado"></div>
           </div>
           <!-- start boton expandir / contraer -->
           <div class="botoneraDerecha">
@@ -90,19 +90,20 @@
               src="./images/expandir.svg"
               alt="expandir"
               title="Expandir / Reduir"
+              onclick="expandir1()"
             />
           </div>
           <!-- end boton expandir / contraer -->
         </div>
         <!-- end button bar -->
       </section>
-      <section class="reproductor2">
+      <section id="reproductor2">
         <!-- start video display -->
         <div id="video2" class="video">
           <video
             src="./materials/The_Adirondack_Forest_Preserve.webm.360p.webm"
             poster="./materials/The_Adirondack_Forest_Preserve.webm.jpg"
-            class="video--2"
+            class="video--2 tempsVideo"
           ></video>
         </div>
         <!-- start video display -->
@@ -160,7 +161,7 @@
               alt="velocidad"
               title="Modificar velocitat"
             />
-            <div class="estado estado2"></div>
+            <div id="estado2" class="estado"></div>
           </div>
           <!-- start boton expandir / contraer -->
           <div class="botoneraDerecha">
@@ -169,6 +170,7 @@
               src="./images/expandir.svg"
               alt="expandir"
               title="Expandir / Reduir"
+              onclick="expandir2()"
             />
           </div>
           <!-- end boton expandir / contraer -->
