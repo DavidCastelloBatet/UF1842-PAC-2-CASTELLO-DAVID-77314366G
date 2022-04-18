@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reproductor de Video</title>
+  </head>
+
+  <body>
+    <div class="reproductors">
+      <section class="reproductor1">
+        <!-- start video display -->
+        <div class="video">
+          <video
+            src="./materials/The_Adirondack_Forest_Preserve.webm.360p.webm"
+            poster="./materials/The_Adirondack_Forest_Preserve.webm.jpg"
+            class="video--1"
+          ></video>
+        </div>
+        <!-- start video display -->
+
+        <!-- start progress bar -->
+        <div class="barraVideo">
+          <div class="barra1">
+            <div class="barra2"></div>
+          </div>
+        </div>
+        <!-- end progress bar -->
+
+        <!-- start button bar -->
+        <div class="botonera">
+          <div class="botoneraIzquierda">
+            <img
+              class="play"
+              src="./images/play.svg"
+              alt="play"
+              title="Play / Pausa"
+              onclick="reproductor1.play()"
+            />
+            <img
+              class="siguiente"
+              src="./images/siguiente.svg"
+              alt="siguiente"
+              title="Següent"
+            />
+            <img
+              class="reiniciar"
+              src="./images/reiniciar.svg"
+              alt="reiniciar"
+              title="Reiniciar video"
+            />
+            <img
+              class="mute"
+              src="./images/volumen1.svg"
+              alt="volumen"
+              title="Mute"
+            />
+            <!-- start slider control volum -->
+            <input
+              id="vol-control"
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              oninput="setVolume(this.value)"
+              onchange="setVolume(this.value)"
+            />
+            <!-- end slider control del volum -->
+            <img
+              class="velocidad"
+              src="./images/velocidad.svg"
+              alt="velocidad"
+              title="Modificar velocitat"
+            />
+            <div class="estado"></div>
+          </div>
+          <!-- start boton expandir / contraer -->
+          <div class="botoneraDerecha">
+            <img
+              class="expandir"
+              src="./images/expandir.svg"
+              alt="expandir"
+              title="Expandir / Reduir"
+            />
+          </div>
+          <!-- end boton expandir / contraer -->
+        </div>
+        <!-- end button bar -->
+      </section>
+      <section class="reproductor2">
+        <!-- start video display -->
+        <div class="video">
+          <video
+            src="./materials/The_Adirondack_Forest_Preserve.webm.360p.webm"
+            poster="./materials/The_Adirondack_Forest_Preserve.webm.jpg"
+            class="video--2"
+          ></video>
+        </div>
+        <!-- start video display -->
+
+        <!-- start progress bar -->
+        <div class="barraVideo">
+          <div class="barra1">
+            <div class="barra2"></div>
+          </div>
+        </div>
+        <!-- end progress bar -->
+
+        <!-- start button bar -->
+        <div class="botonera">
+          <div class="botoneraIzquierda">
+            <img
+              class="play1"
+              src="./images/play.svg"
+              alt="play"
+              title="Play / Pausa"
+              onclick="reproductor2.play()"
+            />
+            <img
+              class="siguiente"
+              src="./images/siguiente.svg"
+              alt="siguiente"
+              title="Següent"
+            />
+            <img
+              class="reiniciar"
+              src="./images/reiniciar.svg"
+              alt="reiniciar"
+              title="Reiniciar video"
+            />
+            <img
+              class="mute"
+              src="./images/volumen1.svg"
+              alt="volumen"
+              title="Mute"
+            />
+            <!-- start slider control volum -->
+            <input
+              id="vol-control"
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              oninput="setVolume(this.value)"
+              onchange="setVolume(this.value)"
+            />
+            <!-- end slider control del volum -->
+            <img
+              class="velocidad"
+              src="./images/velocidad.svg"
+              alt="velocidad"
+              title="Modificar velocitat"
+            />
+            <div class="estado"></div>
+          </div>
+          <!-- start boton expandir / contraer -->
+          <div class="botoneraDerecha">
+            <img
+              class="expandir"
+              src="./images/expandir.svg"
+              alt="expandir"
+              title="Expandir / Reduir"
+            />
+          </div>
+          <!-- end boton expandir / contraer -->
+        </div>
+        <!-- end button bar -->
+      </section>
+    </div>
+    <section class="botonerPpal">
+      <div class="botonera">
+        <div class="botoneraIzquierda">
+          <img
+            class="play"
+            src="./images/play.svg"
+            alt="play"
+            title="Play / Pausa"
+          />
+          <img
+            class="siguiente"
+            src="./images/siguiente.svg"
+            alt="siguiente"
+            title="Següent"
+          />
+          <img
+            class="reiniciar"
+            src="./images/reiniciar.svg"
+            alt="reiniciar"
+            title="Reiniciar video"
+          />
+          <img
+            class="mute"
+            src="./images/volumen1.svg"
+            alt="volumen"
+            title="Mute"
+          />
+          <!-- start slider control volum -->
+          <input
+            id="vol-control"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            oninput="setVolume(this.value)"
+            onchange="setVolume(this.value)"
+          />
+          <!-- end slider control del volum -->
+          <img
+            class="velocidad"
+            src="./images/velocidad.svg"
+            alt="velocidad"
+            title="Modificar velocitat"
+          />
+          <div class="estado"></div>
+        </div>
+        <!-- start boton expandir / contraer -->
+        <div class="botoneraDerecha">
+          <img
+            class="expandir"
+            src="./images/expandir.svg"
+            alt="expandir"
+            title="Expandir / Reduir"
+          />
+        </div>
+        <!-- end boton expandir / contraer -->
+      </div>
+      <!-- end button bar -->
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

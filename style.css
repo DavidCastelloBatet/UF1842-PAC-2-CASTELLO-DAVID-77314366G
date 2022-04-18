@@ -1,0 +1,127 @@
+body {
+  background-color: #c0bdbb;
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+}
+.reproductors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+img {
+  vertical-align: top;
+  width: 100%;
+}
+.botonerPpal {
+  height: 15vh;
+  margin: 20px 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.botonerPpal img {
+  height: 50px;
+  padding: 0 20px;
+}
+
+.botonerPpal input {
+  width: 100px;
+}
+
+section {
+  box-sizing: border-box;
+  display: grid;
+  /* 1 sola columna que tindra 3 files*/
+  grid-template-columns: 1fr;
+  /* la segona fila(barra d'estat) 7px la tercera(botonera)
+  30px. la primera (video), la resta*/
+  grid-template-rows: 1fr 7px 30px;
+  /* vindria a ser l'espai entre els elements */
+  grid-row-gap: 15px;
+  /* ocupara tot l'espai vertical de la finestra del navegador */
+  height: 80vh;
+  padding: 20px;
+}
+
+.video {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.video video {
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px;
+  width: 70%;
+  height: 100%;
+  max-height: calc(100vh - 140px);
+}
+
+.botonera {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+}
+
+.botonera img:hover {
+  background-color: #fff;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 30px;
+}
+
+.estado {
+  color: rgb(12, 11, 12);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2.5;
+  margin-left: 100px;
+}
+
+.botoneraIzquierda {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.botoneraIzquierda > * {
+  width: 30px;
+}
+
+.botoneraIzquierda #vol-control {
+  flex: 1;
+}
+
+.botoneraIzquierda .estado {
+  flex: 3;
+}
+
+.barra1 {
+  background-color: white;
+  height: 10px;
+  margin: 0 7px;
+  border-radius: 5px;
+}
+
+.barra2 {
+  background-color: crimson;
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+}
+
+.barraVideo:hover {
+  cursor: pointer;
+}
+
+video[poster] {
+  /*border: 1px solid white;*/
+  padding: 0 100px;
+}
